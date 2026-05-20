@@ -48,7 +48,7 @@ nav{
     font-style: normal;
     color: #252525;
     font-size: large;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 
 }
 .nav_links:hover{
@@ -76,7 +76,6 @@ main p{
     display: flex;
     justify-content: space-between;
     margin-top: 5vh;
-    overflow: hidden;
 }
 .merchan_box{
     width: 24%;
@@ -103,8 +102,7 @@ main p{
 .merchan_box h2{
     font-family: "Poppins", sans-serif;
     font-size: 1.25rem;
-    /* color: #1a1a1a; */
-    color: #b73f3f;
+    color: #1a1a1a;
     text-align: start;
     width: 100%;
 }
@@ -115,10 +113,4 @@ main p{
     line-height: 1.5;
     text-align: start;
     width: 100%;
-}
-#ajuste{
-    width: 80%;
-}
-#ajuste:hover{
-    width: 90%;
 }
