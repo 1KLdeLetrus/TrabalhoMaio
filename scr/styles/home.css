@@ -103,7 +103,8 @@ main p{
 .merchan_box h2{
     font-family: "Poppins", sans-serif;
     font-size: 1.25rem;
-    color: #1a1a1a;
+    /* color: #1a1a1a; */
+    color: #b73f3f;
     text-align: start;
     width: 100%;
 }
