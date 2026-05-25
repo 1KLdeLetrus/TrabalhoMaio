@@ -48,7 +48,7 @@ nav{
     font-style: normal;
     color: #252525;
     font-size: large;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 
 }
 .nav_links:hover{
@@ -57,7 +57,7 @@ nav{
     font-size: x-large;
 }
 main{
-    height: 130vh;
+    height: 150vh;
     width: 100%;
     padding-top: 20.5vh;
     display: flex;
@@ -76,6 +76,92 @@ main p{
     display: flex;
     justify-content: space-between;
     margin-top: 5vh;
+}
+.product-catalog{
+    width: 80%;
+    margin-top: 6vh;
+}
+.product-catalog h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #252525;
+    font-weight: normal;
+}
+.carousel-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+.carousel-btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #252525;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+.carousel-btn:hover{
+    background-color: #2e7d32;
+    transform: scale(1.1);
+}
+.carousel-btn:active{
+    transform: scale(0.95);
+}
+.carousel-container{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.product-grid{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    transition: transform 1s ease-in-out;
+}
+.product-card{
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    border: 1px solid rgba(37,37,37,0.06);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+    min-height: 40vh;
+    flex: 0 0 calc(20% - 0.8rem);
+    min-width: calc(20% - 0.8rem);
+}
+.product-card img{
+    width: 80%;
+    border-radius: 10px;
+}
+.product-card h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #1a1a1a;
+    width: 100%;
+    text-align: start;
+    margin: 0;
+}
+.product-card .price{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #2e7d32;
+    width: 100%;
+    text-align: start;
+    margin: 0;
 }
 .merchan_box{
     width: 24%;
@@ -98,6 +184,13 @@ main p{
 .merchan_box img:hover{
     width: 70%;
     margin-bottom: 12%;
+}
+#ajuste{
+    width: 70%;
+}
+#ajuste:hover{
+    width: 80%;
+    margin-bottom: -2%;
 }
 .merchan_box h2{
     font-family: "Poppins", sans-serif;
