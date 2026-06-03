@@ -176,28 +176,20 @@ main p{
     gap: 0.8rem;
     box-shadow: 0 10px 20px rgba(0,0,0,0.06);
     border: 1px solid rgba(37,37,37,0.08);
+    transition: 0.4s ease;
+}
+.merchan_box:hover{
+    transform: translateY(-10%);
 }
 .merchan_box img{
     width: 60%;
     transition: 0.3s ease
-}
-.merchan_box img:hover{
-    width: 70%;
-    margin-bottom: 12%;
 }
 #ajuste{
     width: 70%;
 }
 #ajuste2{
     width: 90%;
-}
-#ajuste2:hover{
-    margin-bottom: 11%;
-    width: 100%;
-}
-#ajuste:hover{
-    width: 80%;
-    margin-bottom: -2%;
 }
 .merchan_box h2{
     font-family: "Poppins", sans-serif;
@@ -217,7 +209,7 @@ main p{
 .special_offers{
     margin-top: 10vh;
     background-color: #ffffff;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     overflow: hidden;
     border: 1px solid rgba(37,37,37,0.06);
@@ -235,14 +227,44 @@ main p{
 .offers_texts{
     height: 100%;
     width: 70%;
-    background-color: #4a4a4a;
-    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0 100%);
+    background-color: #0F0E0E;
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 0% 100%);
     display: flex;
-    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 5%;
+    color: white;
 }
-.offers_texts p{
-    background-color: aqua;
+#h1_specialoffer{
+    font-family: "Poppins", sans-serif;
+    font-size: 12vh;
+    font-weight: 700;
+    margin-top: 10%;
+    text-align: start;
+    width: 90%;
+    margin-bottom: -3%;
+}
+#bestprice_offer{
+    font-family: "Poppins", sans-serif;
+    font-size: 5vh;
+    font-weight: 200;
+    margin-bottom: 2%;
+    text-align: start;
+    width: 90%;
+}
+#bestprice_offer strong{
+    font-weight: 500;
+}
+#bestprice_p{
     font-size: medium;
-    width: 80%;
-    margin-right: 13%;
+    width: 40%;
+    font-weight: 200;
+}
+#bestprice_p strong{
+    font-weight: 500;
+}
+.icon_properties{
+    background-color: #ffffff;
+    width: 50%;
+    height: 10%;
 }
