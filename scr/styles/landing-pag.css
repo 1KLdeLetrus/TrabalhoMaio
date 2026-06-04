@@ -1,0 +1,976 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    background-color:  #fbfbfb;
+    overflow-x: hidden;
+}
+header{
+    height: 14.5vh;
+    width: 100%;
+    border-bottom: solid thin rgba(161, 161, 161, 0.451);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.656);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.logo_name{
+    height: 80%;
+    width: 20%;
+    margin-left: -10%;
+    display: flex;
+    align-items: center;
+}
+.logo_name h1{
+    font-size: 3vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 2%;
+    color: #252525;
+}
+.logo_name img{
+    height: 60%;
+}
+nav{
+    margin-right: -10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+.nav_links{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+    color: #252525;
+    transition: 0.3s ease;
+
+}
+.nav_links:hover{
+    border-bottom: solid;
+    font-weight: 500;
+    font-size: 2vw;
+}
+main{
+    background-color: #fbfbfb;
+    height: auto;
+    width: 100%;
+    padding-top: 20.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.apresent-bar{
+    box-shadow: 0px 10px 20px rgb(175, 175, 175);
+    height: 60vh;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.img-do-produto-com-preço-e-nome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 100% ;
+    border-style: solid;
+    border-bottom: none ;
+    border-top: none;
+    border-left: none;
+    border-width: 1px;
+    border-color: #757575;
+}
+.img-do-produto-com-preço-e-nome-2{
+    margin-top: 5vh;
+    box-shadow: 0px 10px 20px rgb(175, 175, 175);
+    display: flex;
+    background-color: #d6d6d6;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    width: 18vw;
+    height: 18vw;
+    border-radius: 1000px;
+    margin-bottom: 5vh;
+}
+.img-produto-novo{
+    margin-bottom: 6vh;
+    max-width: 100%;
+    height: auto;
+}
+.nome-produto{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3vw;
+}
+.preço-do-produto{
+  margin-bottom: 3vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2vw;
+}
+.texts-iniciais-de-apresent-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-apresent-produto{
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    font-family:  "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 600; 
+    font-size: 1.6vw;
+}
+.text-definir-produto{
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-family:  "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 450;
+    font-size: 1.2vw;
+    margin-top: 6vh;
+}
+.conheca-mais-sobre-empresa-produto{
+    font-family:  "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 450;
+    font-size: 1vw;
+    margin-top: 6vh;
+}
+.text-de-apresnt-empresa-a-seguir{
+    margin-top: 10vh;
+    min-height: 70vh;
+    width: 85vw;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.div-pai-organiz{
+    margin-left: 0vw;
+}
+.text-de-apresent-emprensa-sobre{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.title-text-de-apresent-empresa-a-seguir{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+.text-title-de-apresent-emprensa-sobre{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.text-title-de-apresent-emprensa-sobre-2{
+    flex-direction: row;
+    text-align: end;
+}
+.div-text-especial{
+    display: flex;
+    margin-top: 2vh;
+}
+.text-title-de-apresent-emprensa-sobre-2{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-left: 1.2vh;
+    margin-top: -0.4vh;
+}
+.text-de-apresent-emprensa-sobre{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    width: 60vw;
+    margin-right: 10vw;
+}
+.text-de-apresent-emprensa-sobre-1{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+#text-de-apresent-emprensa-sobre-paragrafo-1{
+    color: #17D4E6;
+}
+.text-de-apresnt-empresa-a-seguir img{
+    width: 22vw;
+}
+.div-logo-e-text-de-apresent-emprensa-sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title-section-slide-rigth{
+    margin-top: 12vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+.section-slide-rigth{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    gap: 1rem;
+}
+.section-slide-rigth-1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vw;
+}
+.imgs-slide-rigth{
+    box-shadow: 0px 10px 20px rgb(175, 175, 175);
+    border-style: solid;
+    border-color: #757575;
+    border-width: 8px;
+    opacity: 0;
+    transition: opacity .5s;
+    position: absolute;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 30px;
+    background-color: black;
+}
+.on{
+    opacity: 1;
+}
+.conteiner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+#btn-carrosel-rigth{
+    margin-left: 5vw;
+    margin-right: -10vw;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#btn-carrosel-left{
+    margin-left: -10vw;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#btn-carrosel-rigth img{
+    width: 100%;
+    height: 100%;
+}
+#btn-carrosel-left img{
+    width: 100%;
+    height: 100%;
+}
+.texto-slide-rigth{
+    margin-right: 5vw;
+    font-family: "Poppins", sans-serif;
+    text-align: start;
+    width: 60vw;
+    height: 62vh;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+#title-intrudu-cards{
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+.section-principal-cards{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-cards{
+    box-shadow: 0px 10px 20px rgb(175, 175, 175);
+    width: 22%;
+    height: 80%;
+    border-radius: 20px;
+    transition: 400ms ease-in-out;   
+}
+.section-cards:hover{
+    transform: translateY(-3vh);
+    box-shadow: 0px 10px 20px black;
+}
+.part1-card{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 15%;
+    background-color: #757575;
+
+}
+.part1-card p{
+    color: #fbfbfb;
+    font-size: 1.4vw;
+    text-align: center;
+}
+.part2-card{
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 1.1vw;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.text-destact-card{
+    font-weight: 500;
+    margin-top: 2vh;
+}
+#section-cards1{
+    margin-left: 3vw;
+}
+#section-cards4{
+    margin-right: 3vw;
+}
+.compre-nosso-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title-intrudu-btn-compra{
+    font-size: 1.4vw;
+    margin: 2vw;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.btn-de-compra{
+    border: 2px solid black;
+    background: transparent;
+    border-radius: 25px;
+    width: 18vw;
+    height: 10vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 10px 20px rgb(175, 175, 175);
+    transition: 0.5s ease-in-out ;
+}
+.btn-de-compra:hover{
+    transform: translateY(-1vh);
+    box-shadow: 0px 10px 20px black;
+}
+.mensagem-de-compra{
+    box-shadow: 0px 10px 20px rgb(175, 175, 175);
+    border-radius: 25px;
+    position: fixed;
+    top: 7rem;
+    right: 2rem;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 20vh;
+    background-color: #fbfbfb;
+    border-style: solid;
+    border-width: 1px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.mensagem-de-compra p{
+    font-size: 1.2vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.btns-confirm-de-compra{
+    font-family: "Poppins", sans-serif;
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.confirm{
+    font-size: 1.1vw;
+    box-shadow: 0px 5px 10px rgb(175, 175, 175);
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    background-color: rgb(241, 241, 241);
+    width: 15vh;
+    height: 8vh;
+    border-width: 1px;
+    transition: 0.3s ease-in-out;
+}
+.confirm:hover{
+    transform: translateY(-0.5vh);
+}
+.cancela{
+    font-size: 1.1vw;
+    box-shadow: 0px 5px 10px rgb(175, 175, 175);
+    font-family: "Poppins", sans-serif;
+    border-radius: 15px;
+    background-color: rgb(241, 241, 241);
+    width: 15vh;
+    height: 8vh;
+    border-width: 1px;
+    transition: 0.3s ease-in-out;
+}
+.cancela:hover{
+    transform: translateY(-0.5vh);
+}
+#msg-confirm{
+    height: 10vh;
+    margin-top: 5vh;
+    display: none;
+}
+#msg-cancela{
+    height: 10vh;
+    margin-top: 5vh;
+    display: none;
+}
+footer{
+    background-color: #fbfbfb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10vh;
+    width: 100vw;
+    height: 45vh;
+    border-width: 0.3vh;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.part1-footer{
+    margin-left: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.part1-footer p{
+    margin-top: 2vh;
+    font-size: 1vw;
+    font-family: "Poppins", sans-serif;
+}
+.part1-footer div{
+    width: 20vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.img-link-footer{
+    margin-top: 1vh;
+    width: 2vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border-radius: 20vw;
+}
+#instagram{
+    border-color: #ee2a7b; 
+}
+#facebook{
+    border-color: #1877F2;
+}
+#tiktok{
+    border-color: #00F2EA;
+}
+#whatsapp{
+    border-color: #25D366;
+}
+.img-link-footer:hover{
+    border-style: solid;
+    width: 3vw;
+}
+.logo-footer{
+    width: 10vw;
+}
+.part2-footer{
+    display: flex;
+    align-items: center;
+}
+.políticas-e-informações{
+    height: 30vh;
+    margin-right: 5vw;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.políticas-e-informações p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #17D4E6;
+}
+.políticas-e-informações a{
+    margin-top: 0.5vh;
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: #252525;
+}
+.políticas-e-informações a:hover{
+    text-decoration: underline;
+}
+.central-de-ajuda{
+    height: 30vh;
+    margin-right: 5vw;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.central-de-ajuda p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #17D4E6;
+}
+.central-de-ajuda a{
+    margin-top: 0.5vh;
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: #252525;
+}
+.central-de-ajuda a:hover{
+    text-decoration: underline;
+}
+.selecao{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-family: "Poppins", sans-serif;
+    margin-right: 5vw;
+    font-size: 1.2vw;
+}
+.selecao select{
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    width: 15vw;
+    height: 5vh;
+}
+
+/*responsividade iPad mini*/
+
+@media screen and (max-width: 768px){
+    header{
+        height: 10vh;
+    }
+    .nav_links{
+        font-size: 2vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+    .nav_links:hover{
+        font-size: 2.5vw;
+    }
+    .apresent-bar{
+        margin-top: -10vh;
+        height: 26vh;
+    }
+    .img-do-produto-com-preço-e-nome-2{
+        margin-bottom: 2vh;
+        margin-top: 0vh;
+    }
+    .img-produto-novo{
+        margin-bottom: 3vh;
+    }
+    .nome-produto{
+        font-size: 1.5vw;
+    }
+    .preço-do-produto{
+        font-size: 1.4vw;
+    }
+    .text-apresent-produto{
+        font-size: 2vw;
+    }
+    .text-definir-produto{
+        font-size: 1.5vw;
+        margin-top: 3vh;
+    }
+    .conheca-mais-sobre-empresa-produto{
+        font-size: 1.5vw;
+        margin-top: 3vh;
+    }
+    .text-de-apresnt-empresa-a-seguir{
+        min-height: 40vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+    .title-text-de-apresent-empresa-a-seguir{
+        font-size: 2vw;
+    }
+    .text-title-de-apresent-emprensa-sobre-2{
+        margin-top: -0.15vh;
+        margin-left: 0.5vh;
+        font-size: 1.6vh;
+    }
+    .text-title-de-apresent-emprensa-sobre{
+        font-size: 1.6vh;
+    }
+    .text-de-apresent-emprensa-sobre{
+        margin-top: 0vh
+    }
+    .text-de-apresent-emprensa-sobre-1{
+        font-size: 1.5vw;
+    }
+    #title-section-slide-rigth{
+        margin-top: 0;
+    }
+    .section-slide-rigth{
+        min-height: 30vh;
+        max-height: 38vh;
+    }
+    .texto-slide-rigth{
+        height: 38vh;
+        margin-top: 4vh;
+        font-size: 1.4vw;
+    }
+    .imgs-slide-rigth{
+        height: 25vh;
+    }
+    footer{
+        border-width: 0.1vw;
+        margin-bottom: 32vh;
+    }
+    .section-principal-cards{
+        height: 45vh;
+    }
+    #title-intrudu-cards{
+        margin-bottom: 2vh;
+    }
+    .part2-card{
+        margin-top: 0vh;
+        font-size: 1.4vw;
+    }
+    .title-intrudu-btn-compra{
+            font-size: 1.8vw;
+    }
+    .btn-de-compra{
+        width: 16vw;
+        height: 5vh;
+    }
+    .mensagem-de-compra{
+        width: 35vw;
+        height: 12vh;
+    }
+    .mensagem-de-compra p{
+        font-size: 1.6vw;
+    }
+    .confirm{
+        width: 12vw;
+        height: 4vh;
+        font-size: 1.4vw;
+    }
+    .cancela{
+        font-size: 1.4vw;
+        width: 12vw;
+        height: 4vh;
+    }
+    .part1-footer{
+        margin-bottom: 20vh;
+    }
+    .part1-footer p{
+        font-size: 1.5vw;
+        margin-right: 20vw;
+    }
+    .part1-footer div{
+        margin-right: 20vw;
+    }
+    .logo-footer{
+        width: 15vw;
+    }
+    .div1-footer{
+        margin-right: 20vw;
+    }
+    .img-link-footer{
+        width: 3vw;
+    }
+    .part2-footer{
+        margin-bottom: 8vh;
+    }
+    .políticas-e-informações p{
+        font-size: 1.5vw;
+    }
+    .central-de-ajuda p{
+        font-size: 1.5vw;
+    }
+    .central-de-ajuda a{
+        font-size: 1.3vw;
+    }
+    .políticas-e-informações a{
+        font-size: 1.3vw;
+    }
+    .selecao{
+        margin-top: 5vw;
+        font-size: 1.4vw;
+    }
+    .selecao select{
+        height: 3vh;
+    }
+}
+
+/*responsividade iPhone SE*/
+
+@media screen and (max-width: 375px){
+    header{
+        height: 10vh;
+    }
+    .logo_name{
+        justify-content: space-evenly;
+    }
+    nav{
+        margin-right: 2vw;
+    }
+    .nav_links{
+        font-size: 2.8vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+    .nav_links:hover{
+        font-size: 2.5vw;
+    }
+    .apresent-bar{
+        margin-top: -8vh;
+        height: 30vh;
+    }
+    .img-do-produto-com-preço-e-nome{
+        display: none;
+        flex-direction: column;
+    }
+    .img-do-produto-com-preço-e-nome-2{
+        margin-bottom: 2.5vh;
+        margin-top: 0vh;
+        font-weight: 400;
+    }
+    .img-produto-novo{
+        max-width: 150%;
+        margin-bottom: 4vh;
+    }
+    .nome-produto{
+        display: none;
+        font-size: 1.5vw;
+    }
+    .preço-do-produto{
+        display: none;
+        font-size: 1.4vw;
+    }
+    .text-apresent-produto{
+        font-size: 3vw;
+    }
+    .text-definir-produto{
+        font-size: 2.5vw;
+        margin-top: 3vh;
+    }
+    .conheca-mais-sobre-empresa-produto{
+        margin-top: 2vh;
+        margin: 1.5vw;
+        font-size: 2vw;
+    }
+    .text-de-apresnt-empresa-a-seguir{
+        min-height: 50vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        display: block;
+    }
+    .title-text-de-apresent-empresa-a-seguir{
+        font-size: 4vw;
+    }
+    .text-de-apresnt-empresa-a-seguir img{
+        width: 30vw;
+    }
+    .text-title-de-apresent-emprensa-sobre-2{
+        margin-top: -0.15vh;
+        margin-left: 0.5vh;
+        font-size: 1.6vh;
+    }
+    .text-title-de-apresent-emprensa-sobre{
+        font-size: 1.6vh;
+    }
+    .text-de-apresent-emprensa-sobre{
+        margin-top: 0vh
+    }
+    .text-de-apresent-emprensa-sobre-1{
+        font-size: 3vw;
+    }
+    #title-section-slide-rigth{
+        font-size: 4vw;
+        margin-top: 0;
+    }
+    .section-slide-rigth{
+        flex-direction: column;
+        min-height: 120vh;
+        max-height: 120vh;
+        margin-top: 13vh;
+    }
+    .section-slide-rigth-1{
+        margin-bottom: 10vh;
+    }
+    .texto-slide-rigth{
+        margin-left: 5vw;
+        text-align: start;
+        height: 38vh;
+        margin-top: 4vh;
+        font-size: 2.8vw;
+    }
+    .imgs-slide-rigth{
+        width: 40vw;
+        height: 25vh;
+    }
+    #btn-carrosel-rigth{
+        margin-left: 0;
+        margin-right: -6vw;
+    }
+    #btn-carrosel-left{
+        margin-left: -6vw;
+    }
+    footer{
+        border-width: 0.1vw;
+        margin-bottom: 10vh;
+    } 
+    .section-principal-cards{
+        margin-top: -1vh;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-cards{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-top: 2vh;
+        height: 25%;
+        width: 90%;
+    }
+    #title-intrudu-cards{
+        font-size: 2vh;
+        margin-bottom: 2vh;
+    }
+    .part1-card p{
+        font-size: 2.2vw;
+    }
+    .part2-card{
+        margin-top: -1vh;
+        font-size: 2vw;
+    }
+    .title-intrudu-btn-compra{
+        margin-top: 5vh;
+        font-size: 2.5vw;
+    }
+    .btn-de-compra{
+        width: 20vw;
+        height: 5vh;
+        font-size: 2vw;
+    }
+    .mensagem-de-compra{
+        width: 40vw;
+        height: 12vh;
+        top: 5rem;
+        right: 1rem;
+    }
+    .mensagem-de-compra p{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .confirm{
+        width: 15vw;
+        height: 4vh;
+        font-size: 2.5vw;
+    }
+    .cancela{
+        font-size: 2.5vw;
+        width: 15vw;
+        height: 4vh;
+    }
+    .part1-footer{
+        margin-left: 8vw;
+        margin-bottom: 20vh;
+    }
+    .part1-footer p{
+        font-size: 2vw;
+        margin-left: -2vw;
+    }
+    .part1-footer div{
+        width: 100%;
+        margin-right: 10vw;
+    }
+    .logo-footer{
+        width: 20vw;
+    }
+    .nome-logo-footer{
+        display: none;
+    }
+    .div1-footer{
+        margin-right: -20vw;
+    }
+    .img-link-footer{
+        width: 4vw;
+    }
+    .part2-footer{
+        margin-bottom: 8vh;
+    }
+    .políticas-e-informações p{
+        font-size: 3vw;
+    }
+    .central-de-ajuda p{
+        font-size: 3vw;
+    }
+    .central-de-ajuda a{
+        font-size: 2.5vw;
+    }
+    .políticas-e-informações a{
+        font-size: 2.5vw;
+    }
+    .selecao{
+        margin-top: 5vw;
+        font-size: 2.5vw;
+    }
+    .selecao select{
+        height: 3vh;
+        font-size: 2.5vw;
+    }
+}
