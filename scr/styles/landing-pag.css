@@ -685,10 +685,7 @@ footer{
     .imgs-slide-rigth{
         height: 25vh;
     }
-    footer{
-        border-width: 0.1vw;
-        margin-bottom: 32vh;
-    }
+x
     .section-principal-cards{
         height: 45vh;
     }
@@ -724,6 +721,10 @@ footer{
         font-size: 1.4vw;
         width: 12vw;
         height: 4vh;
+    }
+    footer{
+        border-width: 0.1vw;
+        margin-bottom: 32vh;
     }
     .part1-footer{
         margin-bottom: 20vh;
