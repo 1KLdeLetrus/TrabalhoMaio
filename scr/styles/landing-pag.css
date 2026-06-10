@@ -680,6 +680,7 @@ footer{
         height: 38vh;
         margin-top: 4vh;
         font-size: 1.4vw;
+        text-align: justify;
     }
     .imgs-slide-rigth{
         height: 25vh;
@@ -703,10 +704,12 @@ footer{
     }
     
     .btn-de-compra{
-        width: 16vw;
+        width: 60vw;
         height: 5vh;
         padding: 1vw 1vh ;
         font-size: 1.8vw;
+        margin-top: 5%;
+        margin-bottom: -5%;
     }
     .mensagem-de-compra{
         width: 35vw;
@@ -873,7 +876,7 @@ footer{
     }
     .texto-slide-rigth{
         margin-left: 5vw;
-        text-align: center;
+        text-align: justify;
         height: 68vh;
         margin-top: 4vh;
         font-size: 2.8vw;
@@ -920,9 +923,11 @@ footer{
         font-size: 2.5vw;
     }
     .btn-de-compra{
-        width: 25vw;
+        width: 60vw;
         height: 8vh;
         font-size: 2.5vw;
+        margin-top: 5%;
+        margin-bottom: -5%;
     }
     .mensagem-de-compra{
         width: 40vw;
@@ -935,14 +940,14 @@ footer{
         text-align: center;
     }
     .confirm{
-        width: 15vw;
-        height: 4vh;
+        width: 20vw;
+        height: 5vh;
         font-size: 2.5vw;
     }
     .cancela{
         font-size: 2.5vw;
-        width: 15vw;
-        height: 4vh;
+        width: 20vw;
+        height: 5vh;
     }
     footer{
         border-width: 0.1vw;

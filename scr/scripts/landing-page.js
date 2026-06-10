@@ -44,6 +44,7 @@ const msgCancel = document.getElementById('msg-cancela')
 function abrirMsgCompra(){
     msg.style.display = "flex"  
     msg.style.opacity ="1"
+    msg.style.width = "50%"
 }
 function cancelarCompra(){
     msg.style.opacity = "0"
