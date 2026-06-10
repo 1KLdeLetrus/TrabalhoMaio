@@ -702,6 +702,8 @@ footer{
     .btn-de-compra{
         width: 16vw;
         height: 5vh;
+        padding: 1vw 1vh ;
+        font-size: 1.8vw;
     }
     .mensagem-de-compra{
         width: 35vw;
@@ -770,15 +772,18 @@ footer{
         height: 10vh;
     }
     .logo_name{
-        justify-content: space-evenly;
+        justify-content: space-around;
+    }
+    .logo_name h1{
+        display: none;
     }
     nav{
         margin-right: 2vw;
     }
     .nav_links{
         font-size: 2.8vw;
-        margin-right: 1vw;
-        margin-left: 1vw;
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
     }
     .nav_links:hover{
         font-size: 2.5vw;
@@ -861,7 +866,7 @@ footer{
     }
     .texto-slide-rigth{
         margin-left: 5vw;
-        text-align: start;
+        text-align: center;
         height: 68vh;
         margin-top: 4vh;
         font-size: 2.8vw;
@@ -911,9 +916,9 @@ footer{
         font-size: 2.5vw;
     }
     .btn-de-compra{
-        width: 20vw;
-        height: 5vh;
-        font-size: 2vw;
+        width: 25vw;
+        height: 8vh;
+        font-size: 2.5vw;
     }
     .mensagem-de-compra{
         width: 40vw;
@@ -977,6 +982,7 @@ footer{
     .selecao{
         margin-top: 5vw;
         font-size: 2.5vw;
+        margin-left: -2.5vw;
     }
     .selecao select{
         height: 3vh;
