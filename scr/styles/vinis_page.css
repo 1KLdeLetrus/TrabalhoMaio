@@ -399,3 +399,38 @@ footer{
         padding: 1.5rem;
     }
 }
+
+/* iPad Mini (portrait) and similar tablets */
+@media (max-width: 768px) {
+    /* Header */
+    header { height: 11.5vh; padding: 0 0.8rem; }
+    .hero-text h1 { font-size: clamp(1.6rem, 3.6vw, 2rem); }
+
+    /* Grid adjustments */
+    .products-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+    .product-card { border-radius: 16px; }
+
+    /* Modal */
+    .modal-card { width: min(700px, 100%); grid-template-columns: 1fr; }
+    .modal-image { min-height: 300px; padding: 0.9rem; display:flex; align-items:center; justify-content:center; background:#fafbfe; }
+    .modal-image img { max-width: 100%; height: auto; object-fit: contain; border-radius: 14px; }
+}
+
+@media (max-width: 375px) {
+    /* Small phones */
+    header { height: 11vh; }
+    nav { display: none; }
+    .hero-text h1 { font-size: 1.4rem; }
+    .page-hero { padding: 1.25rem; }
+
+    /* One-column product list */
+    .products-grid { grid-template-columns: 1fr; gap: 1rem; }
+    .product-card { border-radius: 12px; }
+    .product-card img { width: 100%; height: auto; object-fit: cover; }
+
+    /* Modal compact */
+    .modal-card { width: 94%; grid-template-columns: 1fr; border-radius: 12px; }
+    .modal-image { min-height: 200px; padding: 0.6rem; }
+    .modal-details h3 { font-size: 1.1rem; }
+    .modal-details p { font-size: 0.95rem; }
+}
