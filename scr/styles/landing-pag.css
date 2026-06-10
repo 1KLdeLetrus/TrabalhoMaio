@@ -886,10 +886,7 @@ x
     #btn-carrosel-left{
         margin-left: -6vw;
     }
-    footer{
-        border-width: 0.1vw;
-        margin-bottom: 10vh;
-    } 
+    
     .section-principal-cards{
         margin-top: -1vh;
         height: auto;
@@ -943,6 +940,10 @@ x
         font-size: 2.5vw;
         width: 15vw;
         height: 4vh;
+    }
+    footer{
+        border-width: 0.1vw;
+        margin-bottom: 10vh;
     }
     .part1-footer{
         margin-left: 8vw;
