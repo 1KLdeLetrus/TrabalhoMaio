@@ -687,11 +687,12 @@ footer{
     }
 x
     .section-principal-cards{
-        height: 45vh;
+        height: 20vh;
     }
     #title-intrudu-cards{
         margin-bottom: 2vh;
     }
+
     .part2-card{
         margin-top: 0vh;
         font-size: 1.4vw;
@@ -699,6 +700,7 @@ x
     .title-intrudu-btn-compra{
             font-size: 1.8vw;
     }
+    
     .btn-de-compra{
         width: 16vw;
         height: 5vh;
