@@ -1,6 +1,6 @@
 const slider = document.querySelectorAll('.imgs-slide-rigth')
-const btnL = document.getElementById('btn-carrosel-left')
-const btnR = document.getElementById('btn-carrosel-rigth')
+const btnR = document.getElementById('btn-carrosel-left')
+const btnL = document.getElementById('btn-carrosel-rigth')
 
 let currentSlide = 0;
 
@@ -32,8 +32,8 @@ function prevSlider(){
 }
 
 
-btnL.addEventListener('click', nextSlider)
-btnR.addEventListener('click', prevSlider)
+btnR.addEventListener('click', nextSlider)
+btnL.addEventListener('click', prevSlider)
 
 
 
