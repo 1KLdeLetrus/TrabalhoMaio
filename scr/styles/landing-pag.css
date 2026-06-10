@@ -323,7 +323,6 @@ main{
 }
 .section-principal-cards{
     width: 100%;
-    max-width: 100%;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -685,12 +684,14 @@ footer{
     .imgs-slide-rigth{
         height: 25vh;
     }
-x
     .section-principal-cards{
-        height: 20vh;
+        height: 50vh;
+    }
+    .section-cards{
+        height: 80%;
     }
     #title-intrudu-cards{
-        margin-bottom: 2vh;
+        margin-bottom: 0vh;
     }
 
     .part2-card{
@@ -908,11 +909,11 @@ x
         margin-bottom: 2vh;
     }
     .part1-card p{
-        font-size: 2.2vw;
+        font-size: 2.8vw;
     }
     .part2-card{
         margin-top: -1vh;
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .title-intrudu-btn-compra{
         margin-top: 5vh;
