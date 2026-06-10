@@ -406,19 +406,15 @@ footer{
     header{
         height: 10vh;
     }
+    .nav_links{
+        font-size: 2vw;
+    }
     .logo_name{
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
     }
     .logo_name h1{
         display: none;
-    }
-    nav{
-        margin-right: 2vw;
-    }
-    .nav_links{
-        font-size: 2.8vw;
-        margin-right: 0.5vw;
-        margin-left: 0.5vw;
     }
     .nav_links:hover{
         font-size: 2.5vw;

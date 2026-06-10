@@ -25,12 +25,11 @@ function nextSlide() {
     updateCarouselPosition();
     resetAutoRotate();
 }
-
 // Função para ir para o anterior
 function prevSlide() {
     currentPosition--;
-    if (currentPosition < 0) {
-        currentPosition = totalCards;
+    if (currentPosition = totalCards / 2) {
+        currentPosition < 0;
     }
     updateCarouselPosition();
     resetAutoRotate();

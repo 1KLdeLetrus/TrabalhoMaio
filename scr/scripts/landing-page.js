@@ -50,17 +50,17 @@ function cancelarCompra(){
     msg.style.opacity = "0"
     msgCancel.style.opacity = "1"
     msgCancel.style.display = "flex"
-     setTimeout(function() {
+    setTimeout(function() {
         msgCancel.style.opacity ="0"
         msgCancel.style.display = "none"
-     }, 3000);
+    }, 3000);
 }
 function confirmarCompra(){
     msg.style.opacity = "0"
     msgConfirm.style.opacity = "1"
     msgConfirm.style.display = "flex"
-     setTimeout(function() {
+    setTimeout(function() {
         msgConfirm.style.opacity ="0"
         msgConfirm.style.display = "none"
-     }, 3000);
+    }, 3000);
 }
