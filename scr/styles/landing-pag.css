@@ -771,7 +771,7 @@ x
 
 /*responsividade iPhone SE*/
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 376px){
     header{
         height: 10vh;
     }

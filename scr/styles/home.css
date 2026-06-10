@@ -58,7 +58,7 @@ nav{
     font-size: 1.3vw;
 }
 main{
-    height: 250vh;
+    height: 200vh;
     width: 100%;
     padding-top: 20.5vh;
     display: flex;
@@ -67,6 +67,7 @@ main{
     background-color: #fbfbfb;
 }
 main p{
+    margin-top: 5vh;
     font-size: 300%;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -128,7 +129,7 @@ main p{
 }
 .product-grid{
     width: 100%;
-    height: 31vh;
+    height: 32vh;
     display: flex;
     gap: 1rem;
     transition: transform 1s ease-in-out;
@@ -211,7 +212,6 @@ main p{
     width: 100%;
 }
 .special_offers{
-    margin-top: 10vh;
     background-color: #ffffff;
     height: 80vh;
     width: 100%;
@@ -243,7 +243,6 @@ main p{
     font-family: "Poppins", sans-serif;
     font-size: 13vh;
     font-weight: 700;
-    margin-top: 8%;
     text-align: start;
     width: 90%;
     margin-bottom: -3%;
@@ -263,6 +262,7 @@ main p{
     font-size: large;
     width: 40%;
     font-weight: 200;
+    margin-top: -0.5%;
 }
 #bestprice_p strong{
     font-weight: 500;
@@ -521,6 +521,93 @@ footer{
     header{
         height: 10vh;
     }
+    .nav_links{
+        font-size: 2vw;
+    }
+    .logo_name{
+        align-items: center;
+        justify-content: center;
+    }
+    .logo_name h1{
+        display: none;
+    }
+    .nav_links:hover{
+        font-size: 2.5vw;
+    }
+
+    /* Footer responsive from landing page */
+    footer{
+        border-width: 0.1vw;
+        margin-bottom: 32vh;
+    }
+    .part1-footer{
+        margin-bottom: 20vh;
+    }
+    .part1-footer p{
+        font-size: 1.5vw;
+        margin-right: 20vw;
+    }
+    .part1-footer div{
+        margin-right: 20vw;
+    }
+    .logo-footer{
+        width: 15vw;
+    }
+    .div1-footer{
+        margin-right: 20vw;
+    }
+    .img-link-footer{
+        width: 3vw;
+    }
+    .part2-footer{
+        margin-bottom: 8vh;
+    }
+    .políticas-e-informações p{
+        font-size: 1.5vw;
+    }
+    .central-de-ajuda p{
+        font-size: 1.5vw;
+    }
+    .central-de-ajuda a{
+        font-size: 1.3vw;
+    }
+    .políticas-e-informações a{
+        font-size: 1.3vw;
+    }
+    .selecao{
+        margin-top: 5vw;
+        font-size: 1.4vw;
+    }
+    .selecao select{
+        height: 3vh;
+    }
+
+    /* Main spacing */
+    main { padding-top: 17.5vh; height: 200vh;}
+    main p { text-align: center; font-size: 200%;}
+    /* Merch strip */
+    .scroll_bar { height: 34vh; width: 94%; margin-top: 2.5vh; gap: 1rem; }
+    .merchan_box { width: 48%; padding: 1rem; border-radius: 18px; }
+
+    /* Product carousel */
+    .product-catalog { width: 94%; margin-top: 4.5vh; }
+    .product-grid { height: auto; }
+    .product-card { flex: 0 0 calc(48% - 0.8rem); min-width: calc(48% - 0.8rem); padding: 0.7rem; }
+    .product-card img { width: 100%; }
+    .carousel-btn { width: 42px; height: 42px; font-size: 1.2rem; }
+
+    /* Modal */
+    .modal-card { grid-template-columns: 1fr; max-width: 680px; }
+    .modal-image { min-height: 300px; padding: 1rem; }
+    .modal-details { padding: 1.25rem; }
+    .modal-details h3 { font-size: 1.4rem; }
+}
+
+/* ===== Responsive: iPhone SE and very small screens (<=375px) ===== */
+@media (max-width: 376px) {
+    header{
+        height: 10vh;
+    }
     .logo_name{
         justify-content: space-around;
     }
@@ -538,53 +625,16 @@ footer{
     .nav_links:hover{
         font-size: 2.5vw;
     }
-
     /* Main spacing */
-    main { padding-top: 17.5vh; height: 200vh;}
-    main p { text-align: center; font-size: 200%;}
-    /* Merch strip */
-    .scroll_bar { height: 34vh; width: 94%; margin-top: 2.5vh; gap: 1rem; }
-    .merchan_box { width: 48%; padding: 1rem; border-radius: 18px; }
-
-    /* Product carousel */
-    .product-catalog { width: 94%; margin-top: 4.5vh; }
-    .product-grid { height: auto; }
-    .product-card { flex: 0 0 calc(48% - 0.8rem); min-width: calc(48% - 0.8rem); padding: 0.7rem; }
-    .product-card img { width: 100%; }
-    .carousel-btn { width: 42px; height: 42px; font-size: 1.2rem; }
-
-    /* Special offers & footer */
-    .offers_texts {clip-path: none; width: 100%; align-items: center;}
-    #bestprice_offer {text-align: center; font-size: 200%;}
-    #bestprice_p {text-align: justify; width: 80%;}
-    .special_offers img{ display: none; }
-    footer { flex-direction: column; align-items: stretch; height: auto; padding: 1.5rem; }
-
-    /* Modal */
-    .modal-card { grid-template-columns: 1fr; max-width: 680px; }
-    .modal-image { min-height: 300px; padding: 1rem; }
-    .modal-details { padding: 1.25rem; }
-    .modal-details h3 { font-size: 1.4rem; }
-}
-
-/* ===== Responsive: iPhone SE and very small screens (<=375px) ===== */
-@media (max-width: 375px) {
-    /* Header */
-    header { height: 11vh; padding: 0 0.6rem; }
-    .logo_name img { height: 44%; }
-    .logo_name h1 { font-size: 0.95rem; }
-    nav { display: none; }
-
-    /* Main spacing */
-    main { padding-top: 17.5vh; }
+    main { padding-top: 10vh; height: 300vh;}
 
     /* Merch strip stacks vertically for small screens */
-    .scroll_bar { flex-direction: column; gap: 1rem; height: auto; width: 94%; }
+    .scroll_bar { flex-direction: column; gap: 1rem; height: auto;}
     .merchan_box { width: 100%; padding: 0.9rem; border-radius: 14px; }
 
     /* Carousel becomes horizontally scrollable cards */
-    .product-catalog { width: 96%; }
-    .product-grid { display: flex; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.5rem; height: auto; }
+    .product-catalog { width: 96%; height: 30vh; display: none;}
+    .product-grid { display: none; gap: 0.75rem; overflow-x: auto; padding-bottom: 0.5rem; height: auto; }
     .product-card { flex: 0 0 78%; min-width: 78%; padding: 0.6rem; border-radius: 12px; }
     .product-card img { width: 100%; }
     .carousel-btn { display: none; }
@@ -596,6 +646,56 @@ footer{
     .modal-details h3 { font-size: 1.1rem; }
     .modal-details p { font-size: 0.95rem; }
 
-    /* Footer simplified */
-    footer { padding: 1rem; }
+    footer{
+        border-width: 0.1vw;
+        margin-bottom: 10vh;
+    }
+    .part1-footer{
+        margin-left: 8vw;
+        margin-bottom: 20vh;
+    }
+    .part1-footer p{
+        font-size: 2vw;
+        margin-left: -2vw;
+    }
+    .part1-footer div{
+        width: 100%;
+        margin-right: 10vw;
+    }
+    .logo-footer{
+        width: 20vw;
+    }
+    .nome-logo-footer{
+        display: none;
+    }
+    .div1-footer{
+        margin-right: -20vw;
+    }
+    .img-link-footer{
+        width: 4vw;
+    }
+    .part2-footer{
+        margin-bottom: 8vh;
+    }
+    .políticas-e-informações p{
+        font-size: 3vw;
+    }
+    .central-de-ajuda p{
+        font-size: 3vw;
+    }
+    .central-de-ajuda a{
+        font-size: 2.5vw;
+    }
+    .políticas-e-informações a{
+        font-size: 2.5vw;
+    }
+    .selecao{
+        margin-top: 5vw;
+        font-size: 2.5vw;
+        margin-left: -2.5vw;
+    }
+    .selecao select{
+        height: 3vh;
+        font-size: 2.5vw;
+    }
 }
