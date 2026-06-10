@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kz Music Store</title>
+    <link rel="stylesheet" href="scr/styles/vinis_page.css">
+    <link rel="shortcut icon" href="scr/styles/img/kzicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <section class="logo_name">
+            <img src="scr/styles/img/image-removebg-preview.png" alt="logo">
+            <h1>KZ Store</h1>
+        </section>
+        <nav>
+            <a href="index.html" class="nav_links">Home</a>
+            <a href="vinis_page.html" class="nav_links">Vinis</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="hero-text">
+                <span>Seleção exclusiva</span>
+                <h1>Vinis Premium</h1>
+                <p>Veja nossa curadoria de discos clássicos e contemporâneos. Clique em cada vinil para ver mais detalhes e comprar.</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2>Vinil em destaque</h2>
+            <div class="products-grid" id="productGrid"></div>
+        </section>
+
+        <div class="modal-overlay hidden" id="vinylModal">
+            <div class="modal-card">
+                <button class="modal-close" id="closeModal">×</button>
+                <div class="modal-image">
+                    <img src="" alt="Capa do vinil" id="modalImage">
+                </div>
+                <div class="modal-details">
+                    <h3 id="modalName"></h3>
+                    <p class="modal-artist" id="modalArtist"></p>
+                    <p class="modal-price" id="modalPrice"></p>
+                    <p class="modal-duration" id="modalDuration"></p>
+                    <p class="modal-description">Um disco clássico para colecionadores e amantes de som analógico.</p>
+                    <button class="btn-buy" id="buyButton">Comprar agora</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scr/scripts/vinis.js"></script>
+</body>
+</html>
