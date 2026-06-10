@@ -403,28 +403,80 @@ footer{
 /* iPad Mini (portrait) and similar tablets */
 @media (max-width: 768px) {
     /* Header */
-    header { height: 10vh; padding: 0 0.8rem; }
-    .logo_name { align-items: center; justify-content: center; }
-    .logo_name h1 { display: none; }
-    .nav_links { font-size: 2vw; }
-    .nav_links:hover { font-size: 2.5vw; }
-    .hero-text h1 { font-size: clamp(1.6rem, 3.6vw, 2rem); }
+    header{
+        height: 10vh;
+    }
+    .logo_name{
+        justify-content: space-around;
+    }
+    .logo_name h1{
+        display: none;
+    }
+    nav{
+        margin-right: 2vw;
+    }
+    .nav_links{
+        font-size: 2.8vw;
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+    }
+    .nav_links:hover{
+        font-size: 2.5vw;
+    }
 
     /* Footer responsive from landing page */
-    footer { border-width: 0.1vw; margin-bottom: 32vh; }
-    .part1-footer { margin-bottom: 20vh; }
-    .part1-footer p { font-size: 1.5vw; margin-right: 20vw; }
-    .part1-footer div { margin-right: 20vw; }
-    .logo-footer { width: 15vw; }
-    .div1-footer { margin-right: 20vw; }
-    .img-link-footer { width: 3vw; }
-    .part2-footer { margin-bottom: 8vh; }
-    .políticas-e-informações p { font-size: 1.5vw; }
-    .central-de-ajuda p { font-size: 1.5vw; }
-    .central-de-ajuda a { font-size: 1.3vw; }
-    .políticas-e-informações a { font-size: 1.3vw; }
-    .selecao { margin-top: 5vw; font-size: 1.4vw; }
-    .selecao select { height: 3vh; }
+    footer{
+        border-width: 0.1vw;
+        margin-bottom: 10vh;
+    }
+    .part1-footer{
+        margin-left: 8vw;
+        margin-bottom: 20vh;
+    }
+    .part1-footer p{
+        font-size: 2vw;
+        margin-left: -2vw;
+    }
+    .part1-footer div{
+        width: 100%;
+        margin-right: 10vw;
+    }
+    .logo-footer{
+        width: 20vw;
+    }
+    .nome-logo-footer{
+        display: none;
+    }
+    .div1-footer{
+        margin-right: -20vw;
+    }
+    .img-link-footer{
+        width: 4vw;
+    }
+    .part2-footer{
+        margin-bottom: 8vh;
+    }
+    .políticas-e-informações p{
+        font-size: 3vw;
+    }
+    .central-de-ajuda p{
+        font-size: 3vw;
+    }
+    .central-de-ajuda a{
+        font-size: 2.5vw;
+    }
+    .políticas-e-informações a{
+        font-size: 2.5vw;
+    }
+    .selecao{
+        margin-top: 5vw;
+        font-size: 2.5vw;
+        margin-left: -2.5vw;
+    }
+    .selecao select{
+        height: 3vh;
+        font-size: 2.5vw;
+    }
 
     /* Grid adjustments */
     .products-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
