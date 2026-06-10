@@ -253,6 +253,127 @@ main {
 .btn-buy:hover {
     filter: brightness(0.95);
 }
+footer{
+    background-color: #fbfbfb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10vh;
+    width: 100%;
+    height: 45vh;
+    border-top: solid thin rgba(161, 161, 161, 0.451);
+}
+.part1-footer{
+    margin-left: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.part1-footer p{
+    margin-top: 2vh;
+    font-size: 1vw;
+    font-family: "Poppins", sans-serif;
+}
+.part1-footer div{
+    width: 20vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.img-link-footer{
+    margin-top: 1vh;
+    width: 2vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    border-radius: 20vw;
+}
+#instagram{
+    border-color: #ee2a7b; 
+}
+#facebook{
+    border-color: #1877F2;
+}
+#tiktok{
+    border-color: #00F2EA;
+}
+#whatsapp{
+    border-color: #25D366;
+}
+.img-link-footer:hover{
+    border-style: solid;
+    width: 3vw;
+}
+.logo-footer{
+    width: 10vw;
+}
+.part2-footer{
+    display: flex;
+    align-items: center;
+}
+.políticas-e-informações{
+    height: 30vh;
+    margin-right: 5vw;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.políticas-e-informações p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #17D4E6;
+}
+.políticas-e-informações a{
+    margin-top: 0.5vh;
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: #252525;
+}
+.políticas-e-informações a:hover{
+    text-decoration: underline;
+}
+.central-de-ajuda{
+    height: 30vh;
+    margin-right: 5vw;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.central-de-ajuda p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: #17D4E6;
+}
+.central-de-ajuda a{
+    margin-top: 0.5vh;
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: #252525;
+}
+.central-de-ajuda a:hover{
+    text-decoration: underline;
+}
+.selecao{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    font-family: "Poppins", sans-serif;
+    margin-right: 5vw;
+    font-size: 1.2vw;
+}
+.selecao select{
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    width: 15vw;
+    height: 5vh;
+}
 
 @media (max-width: 900px) {
     .modal-card {
