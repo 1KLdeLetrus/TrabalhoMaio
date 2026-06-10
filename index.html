@@ -14,7 +14,7 @@
             <h1>KZ Store</h1>
         </section>
         <nav>
-            <a href="index" class="nav_links">Home</a>
+            <a href="index.html" class="nav_links">Home</a>
             <a href="vinis_page.html" class="nav_links">Vinis</a>
         </nav>
     </header>
@@ -133,6 +133,22 @@
                 </div>
             </section>
         </section>
+
+        <div class="modal-overlay hidden" id="productModal">
+            <div class="modal-card">
+                <button class="modal-close" id="closeProductModal">×</button>
+                <div class="modal-image">
+                    <img src="" alt="" id="productModalImage">
+                </div>
+                <div class="modal-details">
+                    <h3 id="productModalName"></h3>
+                    <p class="modal-price" id="productModalPrice"></p>
+                    <p class="modal-quantity" id="productModalQuantity"></p>
+                    <p class="modal-description" id="productModalDescription"></p>
+                    <button class="btn-buy" id="productBuyButton">Comprar agora</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="part1-footer">

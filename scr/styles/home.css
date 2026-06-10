@@ -237,16 +237,16 @@ main p{
 }
 #h1_specialoffer{
     font-family: "Poppins", sans-serif;
-    font-size: 12vh;
+    font-size: 13vh;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 8%;
     text-align: start;
     width: 90%;
     margin-bottom: -3%;
 }
 #bestprice_offer{
     font-family: "Poppins", sans-serif;
-    font-size: 5vh;
+    font-size: 6vh;
     font-weight: 200;
     margin-bottom: 2%;
     text-align: start;
@@ -256,7 +256,7 @@ main p{
     font-weight: 500;
 }
 #bestprice_p{
-    font-size: medium;
+    font-size: large;
     width: 40%;
     font-weight: 200;
 }
@@ -268,9 +268,6 @@ main p{
     width: 50%;
     height: 10%;
 }
-
-
-
 footer{
     background-color: #fbfbfb;
     display: flex;
@@ -391,4 +388,134 @@ footer{
     border-radius: 20px;
     width: 15vw;
     height: 5vh;
+}
+.product-card{
+    cursor: pointer;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(14, 25, 66, 0.55);
+    display: grid;
+    place-items: center;
+    padding: 2rem 1rem;
+    z-index: 9999;
+}
+
+.modal-overlay.hidden {
+    display: none;
+}
+
+.modal-card {
+    width: min(720px, 100%);
+    max-width: 720px;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    position: relative;
+    align-items: center;
+}
+
+.modal-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.25rem;
+    border: none;
+    background: transparent;
+    color: #14142b;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.modal-image {
+    min-height: 320px;
+    background: #f5f6fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1.2rem;
+}
+
+.modal-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+}
+
+.modal-details {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    color: #252525;
+}
+
+.modal-details h3 {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #18112f;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.modal-details p {
+    margin-bottom: 0.85rem;
+    color: #4c4c6a;
+    line-height: 1.7;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+.modal-details .modal-price,
+.modal-details .modal-quantity {
+    font-weight: 700;
+    color: #2e7d32;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.modal-details .modal-description {
+    margin-top: 0.4rem;
+    font-size: 0.98rem;
+    color: #5b5b6e;
+}
+
+.btn-buy {
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 999px;
+    color: #ffffff;
+    background-color: #2e7d32;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    width: max-content;
+}
+
+.btn-buy:hover {
+    background-color: #256327;
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .modal-card {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-details {
+        padding: 1.5rem;
+    }
 }

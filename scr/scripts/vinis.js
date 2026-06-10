@@ -35,6 +35,29 @@
     capa: "scr/styles/img/vinis/The_Queen_is_Dead.jpg"
   }
 ];
+albuns.push(
+  {
+    nome: "I Wish I Was Here",
+    artista: "Pink Floyd",
+    preco: 89.90,
+    tempo: "41:12",
+    capa: "scr/styles/img/vinis/Wish_You_Were_Here.jpg"
+  },
+  {
+    nome: "Rap é Compromisso",
+    artista: "Sabotage",
+    preco: 119.90,
+    tempo: "58:47",
+    capa: "scr/styles/img/vinis/RaoECompromisso.jpg"
+  },
+  {
+    nome: "77",
+    artista: "Talking Heads",
+    preco: 129.90,
+    tempo: "38:36",
+    capa: "scr/styles/img/vinis/Talking_Heads_77.jpg"
+  }
+);
 
 const productGrid = document.getElementById('productGrid');
 const modal = document.getElementById('vinylModal');
