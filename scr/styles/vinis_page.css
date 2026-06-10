@@ -483,9 +483,31 @@ footer{
     .product-card { border-radius: 16px; }
 
     /* Modal */
-    .modal-card { width: min(700px, 100%); grid-template-columns: 1fr; }
-    .modal-image { min-height: 300px; padding: 0.9rem; display:flex; align-items:center; justify-content:center; background:#fafbfe; }
-    .modal-image img { max-width: 100%; height: auto; object-fit: contain; border-radius: 14px; }
+    .modal-card {
+        width: min(92vw, 700px);
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .modal-image {
+        min-height: 300px;
+        padding: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fafbfe;
+    }
+    .modal-image img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 14px;
+    }
+    .modal-details {
+        padding: 1.5rem;
+    }
+    .modal-details h3 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 376px) {

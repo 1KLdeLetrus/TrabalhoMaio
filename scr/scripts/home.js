@@ -30,7 +30,7 @@ function nextSlide() {
 function prevSlide() {
     currentPosition--;
     if (currentPosition < 0) {
-        currentPosition = totalCards / 2 - 1;
+        currentPosition = totalCards;
     }
     updateCarouselPosition();
     resetAutoRotate();
